@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Love For You 💗</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
+  color: #713b52;
+  text-align: center;
+}
+
+header {
+  padding: 50px 20px 35px;
+  background: linear-gradient(135deg, #ffc4dc, #fff0f5);
+}
+
+h1 {
+  color: #d94f87;
+  font-size: 36px;
+}
+
+header p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+section {
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 28px 20px;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 5px 20px #e8a7c233;
+  width: calc(100% - 30px);
+}
+
+h2 {
+  color: #df6398;
+}
+
+button {
+  background: #e95791;
+  color: white;
+  border: none;
+  padding: 14px 23px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #c83c78;
+}
+
+.heart {
+  font-size: 48px;
+  margin: 10px;
+  animation: beat 1s infinite alternate;
+}
+
+@keyframes beat {
+  to { transform: scale(1.15); }
+}
+
+#letter {
+  display: none;
+  line-height: 1.9;
+  margin-top: 20px;
+}
+
+.reasons p {
+  background: #fff0f6;
+  border-radius: 12px;
+  padding: 13px;
+  margin: 10px 0;
+}
+
+.photo {
+  font-size: 45px;
+  background: #fff0f6;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+footer {
+  padding: 30px 15px;
+  line-height: 1.8;
+  color: #b64f7d;
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 29px; }
+  section { padding: 22px 16px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="heart">💗</div>
+  <h1>Hey, My Favourite Person!</h1>
+  <p>
+    I made a little something just for you.<br>
+    Because you make my world more beautiful. 🌸
+  </p>
+  <button onclick="showLove()">Open Your Surprise 💌</button>
+</header>
+
+<section>
+  <h2>A Little Message For You</h2>
+  <div id="letter">
+    My love, ❤️<br><br>
+    You make my ordinary days feel special.
+    Your smile makes me happy, and having you
+    in my life means more than words can say.<br><br>
+    No matter how busy life gets, I hope you
+    always remember how loved you are.<br><br>
+    You are my favourite person, today and always.
+    💗<br><br>
+    Forever yours, with lots of love. 🧸
+  </div>
+</section>
+
+<section class="reasons">
+  <h2>Reasons Why I Love You 💕</h2>
+  <p>🌷 You always make me smile.</p>
+  <p>💗 You make me feel special.</p>
+  <p>🧸 I love talking to you.</p>
+  <p>✨ You make little moments unforgettable.</p>
+  <p>❤️ You are simply YOU.</p>
+</section>
+
+<section>
+  <h2>Our Little Memory Corner 📸</h2>
+  <p>Every memory with you is special.</p>
+  <div class="photo">📷 💗 📷</div>
+  <p>Add your favourite photos here later!</p>
+</section>
+
+<section>
+  <h2>One Last Thing... 💖</h2>
+  <p>Do you know how much I love you?</p>
+  <button onclick="alert('SURPRISE! 💗 You are loved more than you know!')">
+    Click Me Again 🥹
+  </button>
+</section>
+
+<footer>
+  Made with love, just for you 💗<br>
+  You + Me = My Favourite Story ♡
+</footer>
+
+<script>
+function showLove() {
+  const letter = document.getElementById("letter");
+  letter.style.display = "block";
+  letter.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+</script>
+
+</body>
+</html>
